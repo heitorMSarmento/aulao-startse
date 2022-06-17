@@ -27,13 +27,13 @@
                     <nav>
                         <ul class="menu">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#home" onclick="menuHamburguer()">Home</a>
                             </li>
                             <li>
-                                <a href="#">Artigos</a>
+                                <a href="#card" onclick="menuHamburguer()">Artigos</a>
                             </li>
                             <li>
-                                <a href="#">Contato</a>
+                                <a href="#contato" onclick="menuHamburguer()">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -42,7 +42,7 @@
         </div>
     </header>
     <main>
-        <div class="container-main">
+        <div id="home" class="container-main">
             <div>
                 <h2><span>Inscreva-se agora</span></h2>
                 <h2>na Newsletter</h2>
@@ -60,7 +60,7 @@
         </div>
     </main>
     <section class="cards">
-        <div class="card">
+        <div id="card" class="card">
             <div class="image">
                 <img src="./images/unicornio.webp" />
             </div>
@@ -116,8 +116,7 @@
             </div>
         </div>
     </section>
-    <footer>
-
+    <footer id="contato">
         <img id="logo-footer" src="./images/image2.png" alt="Logo StartSe">
         <div class="container-footer">
             <div class="container-social">
@@ -172,6 +171,12 @@
             <p>Todos os direitos reservados © startse.com<br>São Paulo, Brasil | Palo Alto, EUA | Shanghai, China</p>
         </div>
     </footer>
+    <script>
+        const checkbox = document.getElementById("checkbox-menu")
+        function menuHamburguer() {
+            checkbox.checked = false
+        }
+    </script>
 </body>
 
 </html>

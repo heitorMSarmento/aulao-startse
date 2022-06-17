@@ -1,5 +1,4 @@
 @media (max-width: 1200px) {
-
     form {
         margin: 8px 0;
     }
@@ -28,11 +27,38 @@
     .container-social {
         margin-bottom: 16px;
     }
+
+
+    footer form [type="submit"] {
+        width: 400px;
+    }
+
+    #mensagem {
+        width: 400px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    footer form input {
+        width: 400px;
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .container-social {
+        width: auto;
+    }
+
+    .container-main form input {
+        width: 400px;
+    }
 }
 
 @media (max-width: 1000px) {
+
+
     .container {
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
 
     main .container-main div {
@@ -78,8 +104,13 @@
         width: 100vw;
         justify-content: center;
         align-items: center;
-        left: 100%;
-        transform: translateX(100vw);
+        right: 0%;
+        transform: translateX(-100vw);
+        transition: 0.5s ease transform;
+    }
+
+    #checkbox-menu:checked~nav .menu {
+        transform: translateX(0vw);
         transition: 0.5s ease transform;
     }
 
@@ -101,7 +132,7 @@
     .menu li a {
         flex: 1;
         text-align: center;
-    }
+    }       
 
     main .container-menu img {
         display: none;
@@ -155,27 +186,24 @@
         width: 100%;
     }
 
-    #checkbox-menu:checked~nav .menu {
-        transform: translateX(-100vw);
-        transition: 0.5s ease transform;
-    }
+
 }
 
-@media (max-width: 490px) {
+@media (max-width: 490px) {}
 
-
+@media (max-width: 425px) {
     footer form [type="submit"] {
-        width: 350px;
+        width: 300px;
     }
 
     #mensagem {
-        width: 350px;
+        width: 300px;
         padding: 0px;
         margin: 0px;
     }
 
     footer form input {
-        width: 350px;
+        width: 300px;
         padding: 1px;
         margin: 1px;
     }
@@ -185,7 +213,6 @@
     }
 
     .container-main form input {
-        width: 350px;
+        width: 300px;
     }
-
 }

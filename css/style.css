@@ -23,6 +23,10 @@ a {
 
 header {
     background-color: #0080ed;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 header .container {
@@ -47,7 +51,7 @@ header nav ul li a {
     color: white;
     text-transform: uppercase;
     font-size: 18px;
-    padding: 24px;
+    padding: 20px;
     transition: all 250ms linear 0s;
 }
 
@@ -56,7 +60,7 @@ header nav ul li a:hover {
 }
 
 header .container img {
-    height: 30px;
+    height: 25px;
 }
 
 #checkbox-menu {
